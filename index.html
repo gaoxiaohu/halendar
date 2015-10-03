@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="css/halendar.css" type="text/css" />
+</head>
+
+<body>
+    <div id="h"></div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/halendar.js"></script>
+    <script>
+    $('#h').halendar({
+        lang:"ZN",
+        onClick: function() {
+           date = this.val();
+           console.log(date)
+        }
+    });
+    </script>
+</body>
+
+</html>
